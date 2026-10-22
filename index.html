@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muruga MP Academy | Official Student-First Physics &amp; Exam Portal</title>
+  <meta name="description" content="Official student-first concept platform for Muruga MP Academy. 529+ verified Physics lessons, 31 public playlists, Centum challenges, NEET/JEE PYQs, and TNEA counselling.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+  <!-- Main Navigation Header -->
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      
+      <!-- Official Channel Full Logo in Left Corner -->
+      <a href="#home" class="brand-logo" aria-label="Muruga MP Academy Home" title="Muruga MP Academy • Official Portal">
+        <img src="assets/muruga_logo_512.png" alt="Muruga MP Academy Official Logo" class="brand-channel-logo">
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active" data-tab="home">Home</a></li>
+          <li><a href="#library" class="nav-link" data-tab="library">Library</a></li>
+          <li><a href="#playlists" class="nav-link" data-tab="playlists">Playlists</a></li>
+          <li><a href="#examprep" class="nav-link" data-tab="examprep">Board Prep</a></li>
+          <li><a href="#neetjee" class="nav-link" data-tab="neetjee">NEET &amp; JEE</a></li>
+          <li><a href="#career" class="nav-link" data-tab="career">Career</a></li>
+          <li><a href="#batches" class="nav-link highlight-nav" data-tab="batches">Batch 5 Tuition</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Action Controls -->
+      <div class="header-actions">
+        <button type="button" class="search-trigger-btn" id="search-trigger" title="Quick Search (Press /)">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <span class="search-btn-text">Search</span>
+          <kbd class="search-kbd">/</kbd>
+        </button>
+
+        <button type="button" class="bookmark-btn" id="open-bookmarks-btn" aria-label="Saved Bookmarks" title="Saved Bookmarks">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg>
+          <span class="bookmark-counter" id="bookmark-count">0</span>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button type="button" class="mobile-toggle" id="mobile-toggle-btn" aria-label="Open Navigation Menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer-overlay" id="mobile-drawer-overlay"></div>
+  <aside class="mobile-drawer" id="mobile-drawer">
+    <div class="drawer-header">
+      <div class="drawer-brand">
+        <img src="assets/muruga_logo_512.png" alt="Muruga MP Academy" class="drawer-avatar">
+        <div>
+          <div class="drawer-title">MURUGA MP ACADEMY</div>
+          <div class="drawer-sub">Open Your Mind With Muruga MP</div>
+        </div>
+      </div>
+      <button type="button" class="drawer-close" id="drawer-close-btn">&times;</button>
+    </div>
+    <nav class="drawer-nav">
+      <a href="#home" class="drawer-link active" data-tab="home">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+        Home
+      </a>
+      <a href="#library" class="drawer-link" data-tab="library">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+        Study Library (529 Lessons)
+      </a>
+      <a href="#playlists" class="drawer-link" data-tab="playlists">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
+        Playlists Hub (31 Collections)
+      </a>
+      <a href="#examprep" class="drawer-link" data-tab="examprep">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+        Board Prep (75-Day Centum)
+      </a>
+      <a href="#neetjee" class="drawer-link" data-tab="neetjee">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>
+        NEET &amp; JEE (454+ PYQs)
+      </a>
+      <a href="#career" class="drawer-link" data-tab="career">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
+        Career Guidance &amp; TNEA
+      </a>
+      <a href="#motivation" class="drawer-link" data-tab="motivation">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+        Mindset &amp; Motivation
+      </a>
+      <a href="#batches" class="drawer-link highlight" data-tab="batches">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+        Batch 5 Tuition (Oct 24)
+      </a>
+      <a href="#about" class="drawer-link" data-tab="about">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+        About Educator &amp; Sources
+      </a>
+    </nav>
+    <div class="drawer-footer">
+      <div class="drawer-signature">&ldquo;Help Others With a Smile&rdquo;</div>
+      <div class="drawer-footnote">Muruga MP Academy &bull; Official Student Portal</div>
+    </div>
+  </aside>
+
+  <!-- MAIN APP CONTAINER -->
+  <main id="main-content">
+
+    <!-- ==================== TAB 1: HOME ==================== -->
+    <section id="tab-home" class="tab-pane active">
+      
+      <!-- Hero Section with Interactive Physics Engine -->
+      <section class="hero-section" id="hero">
+        <canvas id="physics-canvas" class="physics-canvas" aria-hidden="true"></canvas>
+        <div class="hero-ambient-orb hero-orb-cyan"></div>
+        <div class="hero-ambient-orb hero-orb-amber"></div>
+        <div class="hero-ambient-grid"></div>
+
+        <!-- Floating Interactive Physics Formula Badges -->
+        <div class="floating-formula-chip formula-chip-1" title="Mass-Energy Equivalence">E = mc&sup2;</div>
+        <div class="floating-formula-chip formula-chip-2" title="Gauss's Law of Electrostatics">&oint; E &bull; dA = Q/&epsilon;&sub0;</div>
+        <div class="floating-formula-chip formula-chip-3" title="de Broglie Quantum Wavelength">&lambda; = h / p</div>
+        <div class="floating-formula-chip formula-chip-4" title="Faraday's Law of Electromagnetic Induction">&epsilon; = -d&Phi;/dt</div>
+
+        <div class="container hero-container">
+          <div class="hero-grid">
+            
+            <!-- Left Column: Copy, Signature Motto & CTAs -->
+            <div class="hero-left-col">
+              
+              <div class="hero-badge-pill">
+                <span class="live-pulse-dot"></span>
+                <span class="hero-badge-text">TAMIL NADU'S PREMIER PHYSICS MENTOR &bull; 529+ FREE LESSONS</span>
+              </div>
+
+              <h1 class="hero-main-title">
+                Master Physics. <br>
+                <span class="hero-gradient-text">Conquer Every Exam.</span>
+              </h1>
+
+              <p class="hero-lead-text">
+                Crystal-clear bilingual physics education (Tamil &amp; English) for <strong>CBSE, NCERT, Tamil Nadu Samacheer Kalvi, NEET &amp; JEE</strong>. 529+ free video lessons organized chapterwise with zero algorithm distraction.
+              </p>
+
+              <!-- Central Slogan & Signature Motto Showcase Card -->
+              <div class="hero-signature-motto-box">
+                <div class="motto-accent-bar"></div>
+                <div class="motto-top-row">
+                  <span class="motto-kicker">EDUCATOR MOTTO &amp; GUIDING PROMISE</span>
+                  <div class="motto-quote-mark">&#10077;</div>
+                </div>
+                <div class="motto-primary-slogan">
+                  &ldquo;Help Others With a Smile&rdquo;
+                </div>
+                <p class="motto-philosophical-line">
+                  &ldquo;Learn with clarity. Grow with confidence. Help others along the way.&rdquo;
+                </p>
+                <div class="motto-author-strip">
+                  <img src="assets/yt_channel_avatar.jpg" alt="Muruga MP" class="motto-author-thumb">
+                  <div class="motto-author-meta">
+                    <span class="motto-author-name">Muruganandam M (Muruga MP)</span>
+                    <span class="motto-author-desc">Acclaimed Physics Teacher &bull; Open Your Mind With Muruga MP</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Hero CTAs -->
+              <div class="hero-actions-group">
+                <a href="#library" class="btn-hero-primary" id="hero-browse-btn">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                  Explore 529 Free Lessons
+                </a>
+                <a href="https://wa.me/919043568854?text=Hello%20Muruga%20MP%20Sir%2C%20I%20want%20to%20inquire%20about%20Tuition%20Batches." target="_blank" rel="noopener noreferrer" class="btn-hero-whatsapp">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.173.086.275.072.376-.043.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.043.073.043.419-.101.824z"/></svg>
+                  Batch 5 WhatsApp
+                </a>
+                <a href="https://t.me/s/OpenYourMindWithMurugaMP" target="_blank" rel="noopener noreferrer" class="btn-hero-telegram">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.75-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .37z"/></svg>
+                  16.7K+ Telegram
+                </a>
+              </div>
+
+              <!-- Hero Instant Search Box -->
+              <div class="hero-live-search-card">
+                <div class="hero-search-bar">
+                  <svg class="h-search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                  <input type="text" id="hero-search-input" placeholder="Search 529 lessons: Electrostatics, Optics, Centum, NEET..." aria-label="Search all lessons">
+                  <button type="button" id="hero-search-btn" class="btn-search-go">Search</button>
+                </div>
+                <div class="hero-topic-chips-row">
+                  <span class="chips-title">Trending Topics:</span>
+                  <button class="quick-chip" data-search="Ray Optics">Ray Optics</button>
+                  <button class="quick-chip" data-search="Alternating Current">AC Circuits</button>
+                  <button class="quick-chip" data-search="Gauss">Gauss's Law</button>
+                  <button class="quick-chip" data-search="75Days">75-Day Centum</button>
+                  <button class="quick-chip" data-search="PYQ">NEET 50 PYQs</button>
+                  <button class="quick-chip" data-search="One Shot">One-Shot</button>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Right Column: Muruga MP Hero Portrait Showcase -->
+            <div class="hero-right-col">
+              <div class="educator-portrait-card">
+                <!-- Atomic Orbit Rings with Revolving Electrons -->
+                <div class="atom-orbit-ring orbit-ring-1" aria-hidden="true">
+                  <span class="orbiting-electron electron-cyan"></span>
+                </div>
+                <div class="atom-orbit-ring orbit-ring-2" aria-hidden="true">
+                  <span class="orbiting-electron electron-amber"></span>
+                </div>
+
+                <div class="portrait-ambient-glow"></div>
+                <div class="portrait-image-wrapper">
+                  <img src="assets/muruga_hero.jpg" alt="Educator Muruga MP with Physics and Relativity Books" class="portrait-main-img">
+                  <div class="portrait-gradient-overlay"></div>
+                </div>
+
+                <!-- Floating Glass Badge: 9+ Years -->
+                <div class="floating-badge badge-top-right">
+                  <div class="badge-icon gold-icon">&#11088;</div>
+                  <div class="badge-content">
+                    <span class="badge-bold">9+ Years Mentoring</span>
+                    <span class="badge-tiny">100K+ Students Guided</span>
+                  </div>
+                </div>
+
+                <!-- Floating Glass Badge: 529 Free Lessons -->
+                <div class="floating-badge badge-bottom-left">
+                  <div class="badge-icon cyan-icon">&#9889;</div>
+                  <div class="badge-content">
+                    <span class="badge-bold">529 Free Video Lessons</span>
+                    <span class="badge-tiny">31 Structured Playlists</span>
+                  </div>
+                </div>
+
+                <!-- Verified Educator Bar -->
+                <div class="portrait-verified-footer">
+                  <div class="verified-avatar-ring">
+                    <img src="assets/muruga_logo_512.png" alt="Muruga MP Academy" class="verified-avatar-small">
+                  </div>
+                  <div class="verified-details">
+                    <div class="v-name-row">
+                      <span class="v-name">Muruganandam M (Muruga MP)</span>
+                      <span class="v-check" title="Verified Educator">&#10003;</span>
+                    </div>
+                    <span class="v-sub">@MurugaMP &bull; Open Your Mind With Muruga MP</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Hero Metrics Strip -->
+          <div class="hero-stats-banner">
+            <div class="metric-card">
+              <span class="metric-num">529+</span>
+              <span class="metric-lbl">Free Physics Lessons</span>
+              <span class="metric-sub">Class 9 to 12 &amp; Entrance</span>
+            </div>
+            <div class="metric-card">
+              <span class="metric-num">31</span>
+              <span class="metric-lbl">Master Playlists</span>
+              <span class="metric-sub">Full syllabus coverage</span>
+            </div>
+            <div class="metric-card">
+              <span class="metric-num">16.7K+</span>
+              <span class="metric-lbl">Telegram Scholars</span>
+              <span class="metric-sub">Daily notes &amp; PDF challenges</span>
+            </div>
+            <div class="metric-card">
+              <span class="metric-num">454+</span>
+              <span class="metric-lbl">NEET / JEE PYQs</span>
+              <span class="metric-sub">Chapterwise derivations</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Section: Key Learning Tracks -->
+      <section class="section tracks-section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Targeted Academic Tracks</span>
+            <h2 class="section-title">Explore by Grade &amp; Examination Goal</h2>
+            <p class="section-subtitle">Structured video series curated from Muruga MP's channels. Clean, ordered, zero algorithm clutter.</p>
+          </div>
+
+          <div class="tracks-grid">
+            
+            <div class="track-card">
+              <div class="track-top">
+                <div class="track-icon blue">⚡</div>
+                <span class="track-badge">Class 12 Comprehensive</span>
+              </div>
+              <h3 class="track-title">Class 12 Complete Physics</h3>
+              <p class="track-desc">22 full chapter modules covering Electrostatics, Current Electricity, Magnetism, EMI, AC, Optics &amp; Dual Nature.</p>
+              <div class="track-meta"><span>22 Lessons</span> &bull; <span>CBSE &amp; State Board</span></div>
+              <button class="track-btn" data-action="filter-track" data-class="Class 12" data-format="Concept Lesson">Browse Class 12 Course &rarr;</button>
+            </div>
+
+            <div class="track-card highlight-border">
+              <div class="track-top">
+                <div class="track-icon gold">🏆</div>
+                <span class="track-badge gold">Board Exam 2027 Flagship</span>
+              </div>
+              <h3 class="track-title">75-Day Centum Challenge</h3>
+              <p class="track-desc">59 focused videos covering line-by-line 2, 3 &amp; 5 mark compulsory questions, derivations, and daily targets.</p>
+              <div class="track-meta"><span>59 Videos</span> &bull; <span>TN State Board</span></div>
+              <button class="track-btn" data-action="view-tab" data-target="examprep">View Centum Roadmap &rarr;</button>
+            </div>
+
+            <div class="track-card">
+              <div class="track-top">
+                <div class="track-icon purple">🎯</div>
+                <span class="track-badge purple">Medical &amp; Eng Entrance</span>
+              </div>
+              <h3 class="track-title">NEET &amp; JEE PYQ Bank</h3>
+              <p class="track-desc">Over 450+ chapterwise Previous Year Questions worked out step-by-step in Tamil with physics problem shortcuts.</p>
+              <div class="track-meta"><span>454 Lessons</span> &bull; <span>National Syllabus</span></div>
+              <button class="track-btn" data-action="view-tab" data-target="neetjee">Explore NEET PYQs &rarr;</button>
+            </div>
+
+            <div class="track-card">
+              <div class="track-top">
+                <div class="track-icon green">⚡</div>
+                <span class="track-badge green">Rapid Review</span>
+              </div>
+              <h3 class="track-title">One-Shot Revision Marathons</h3>
+              <p class="track-desc">Entire syllabus compressed into comprehensive marathon lectures. Perfect for revision before Quarterly and Public exams.</p>
+              <div class="track-meta"><span>9 Marathons</span> &bull; <span>Full Chapters</span></div>
+              <button class="track-btn" data-action="filter-track" data-format="One-Shot Revision">Watch One-Shots &rarr;</button>
+            </div>
+
+            <div class="track-card">
+              <div class="track-top">
+                <div class="track-icon cyan">🧭</div>
+                <span class="track-badge cyan">Higher Education</span>
+              </div>
+              <h3 class="track-title">Career Guidance &amp; TNEA</h3>
+              <p class="track-desc">Step-by-step TNEA engineering choice filling, cut-off analysis, college ranking, and counseling procedure walkthroughs.</p>
+              <div class="track-meta"><span>20+ Guides</span> &bull; <span>Official Notices</span></div>
+              <button class="track-btn" data-action="view-tab" data-target="career">View Career Guidance &rarr;</button>
+            </div>
+
+            <div class="track-card">
+              <div class="track-top">
+                <div class="track-icon orange">⏱️</div>
+                <span class="track-badge orange">Micro-Learning</span>
+              </div>
+              <h3 class="track-title">Only 7 Minutes! Physics Tricks</h3>
+              <p class="track-desc">67 bite-sized concept clarifications, formula memory hacks, and problem-solving shortcuts designed for fast retention.</p>
+              <div class="track-meta"><span>67 Lessons</span> &bull; <span>Formula Hacks</span></div>
+              <button class="track-btn" data-action="filter-track" data-search="7 minutes">View 7-Min Series &rarr;</button>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Verified Recent Channel Uploads -->
+      <section class="section recent-section">
+        <div class="container">
+          <div class="section-header between">
+            <div>
+              <span class="section-tag">Direct From YouTube</span>
+              <h2 class="section-title">Latest Verified Uploads &amp; Announcements</h2>
+            </div>
+            <button class="btn-outline" data-action="view-tab" data-target="library">View All 529 Videos &rarr;</button>
+          </div>
+          <div class="recent-grid" id="featured-recent-grid">
+            <!-- Dynamically populated from JS -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Current Admissions & Tuition Banner -->
+      <section class="section batch-callout-section">
+        <div class="container">
+          <div class="batch-callout-card">
+            <div class="batch-callout-badge">Verified Academy Admissions &bull; October 2026</div>
+            <h2 class="batch-callout-title">Class 12 Physics Batch 5 Tuition &mdash; Starts Oct 24</h2>
+            <p class="batch-callout-desc">
+              Structured 3-month Physics preparation for CBSE &amp; Tamil Nadu State Board students preparing for the 2027 Board Exams.
+              Includes full syllabus coverage, 100+ PYQs, board marking scheme answer writing, and formula sheets.
+            </p>
+            <div class="batch-callout-meta">
+              <div class="b-meta-item">
+                <span class="b-label">CBSE Class 12:</span>
+                <span class="b-val">Tue, Thu, Sat &bull; 7:00 &ndash; 8:00 PM</span>
+              </div>
+              <div class="b-meta-item">
+                <span class="b-label">TN State Board Class 12:</span>
+                <span class="b-val">Tue, Thu, Sat &bull; 5:00 &ndash; 6:00 PM</span>
+              </div>
+              <div class="b-meta-item">
+                <span class="b-label">Verified Fee:</span>
+                <span class="b-val">₹8,999 (Early) / ₹12,999 (Regular)</span>
+              </div>
+            </div>
+            <div class="batch-callout-actions">
+              <a href="https://wa.me/919043568854?text=Hello%20Muruga%20MP%20Academy%2C%20I%20am%20interested%20in%20joining%20Batch%205" target="_blank" rel="noopener noreferrer" class="btn-whatsapp">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.173.086.275.072.376-.043.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.043.073.043.419-.101.824z"/></svg>
+                Inquire on WhatsApp (9043568854)
+              </a>
+              <button class="btn-outline light" data-action="view-tab" data-target="batches">Read Full Batch Curriculum &rarr;</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </section>
+
+
+    <!-- ==================== TAB 2: STUDY LIBRARY ==================== -->
+    <section id="tab-library" class="tab-pane">
+      <div class="container library-container">
+        
+        <div class="library-header">
+          <div>
+            <h1 class="page-title">Curated Study Library</h1>
+            <p class="page-subtitle">Search and filter across all 529 verified video lessons from Muruga MP's educational channels.</p>
+          </div>
+          <div class="library-counter-badge">
+            <span id="filtered-count">529</span> / <span id="total-count">529</span> Lessons Available
+          </div>
+        </div>
+
+        <!-- Filter & Search Controls Bar -->
+        <div class="library-filter-panel">
+          
+          <div class="search-row">
+            <div class="search-input-field">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+              <input type="text" id="library-search-input" placeholder="Search by title, topic, formula, or concept..." aria-label="Search study library">
+              <button type="button" id="library-search-clear" class="clear-search-btn" title="Clear search">&times;</button>
+            </div>
+            
+            <div class="sort-wrapper">
+              <label for="sort-select">Sort By:</label>
+              <select id="sort-select" class="form-select">
+                <option value="default">Default Playlist Sequence</option>
+                <option value="az">Title (A &rarr; Z)</option>
+                <option value="za">Title (Z &rarr; A)</option>
+                <option value="duration-desc">Duration (Longest First)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="filter-pills-row">
+            
+            <!-- Class Filter -->
+            <div class="filter-group">
+              <span class="filter-label">Class Level:</span>
+              <div class="pill-group" id="class-filter-pills">
+                <button class="filter-pill active" data-filter="class" data-val="all">All Classes</button>
+                <button class="filter-pill" data-filter="class" data-val="Class 12">Class 12</button>
+                <button class="filter-pill" data-filter="class" data-val="Class 11">Class 11</button>
+                <button class="filter-pill" data-filter="class" data-val="Class 10">Class 10</button>
+                <button class="filter-pill" data-filter="class" data-val="Class 9">Class 9</button>
+              </div>
+            </div>
+
+            <!-- Syllabus Filter -->
+            <div class="filter-group">
+              <span class="filter-label">Board / Syllabus:</span>
+              <div class="pill-group" id="syllabus-filter-pills">
+                <button class="filter-pill active" data-filter="syllabus" data-val="all">All Boards</button>
+                <button class="filter-pill" data-filter="syllabus" data-val="CBSE">CBSE / NCERT</button>
+                <button class="filter-pill" data-filter="syllabus" data-val="State">TN State Board</button>
+                <button class="filter-pill" data-filter="syllabus" data-val="NEET">NEET / JEE</button>
+              </div>
+            </div>
+
+            <!-- Content Format Filter -->
+            <div class="filter-group">
+              <span class="filter-label">Lesson Format:</span>
+              <div class="pill-group" id="format-filter-pills">
+                <button class="filter-pill active" data-filter="format" data-val="all">All Formats</button>
+                <button class="filter-pill" data-filter="format" data-val="Concept Lesson">Concepts</button>
+                <button class="filter-pill" data-filter="format" data-val="PYQ Problem Solving">PYQ Solving</button>
+                <button class="filter-pill" data-filter="format" data-val="One-Shot Revision">One-Shot</button>
+                <button class="filter-pill" data-filter="format" data-val="Formula Tricks">Formula Tricks</button>
+                <button class="filter-pill" data-filter="format" data-val="Study Plan">Study Plans</button>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Active Filter Tags Strip -->
+          <div class="active-filters-bar" id="active-filters-bar" style="display: none;">
+            <span class="active-filters-title">Active Filters:</span>
+            <div class="tags-container" id="active-tags-container"></div>
+            <button type="button" class="btn-text-danger" id="reset-all-filters-btn">Reset All</button>
+          </div>
+
+        </div>
+
+        <!-- Lessons Display Grid -->
+        <div class="lessons-grid" id="lessons-grid">
+          <!-- Dynamically populated via JS -->
+        </div>
+
+        <!-- Empty State (Shown if no results match) -->
+        <div class="empty-state" id="library-empty-state" style="display: none;">
+          <div class="empty-icon">🔍</div>
+          <h3>No matching verified lessons found</h3>
+          <p>Try searching for a broader term like &ldquo;Physics&rdquo;, &ldquo;Optics&rdquo;, or &ldquo;Centum&rdquo;, or reset your filters.</p>
+          <button type="button" class="btn-primary" id="empty-reset-btn">Reset All Filters</button>
+        </div>
+
+        <!-- Pagination Controls -->
+        <div class="pagination-wrapper" id="pagination-wrapper">
+          <button type="button" class="btn-outline" id="prev-page-btn">&larr; Previous</button>
+          <span class="page-indicator" id="page-indicator">Page 1 of 1</span>
+          <button type="button" class="btn-outline" id="next-page-btn">Next &rarr;</button>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==================== TAB 3: PLAYLISTS DIRECTORY ==================== -->
+    <section id="tab-playlists" class="tab-pane">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag">Direct YouTube Channel Mapping</span>
+          <h1 class="page-title">Verified Public Playlists (31 Collections)</h1>
+          <p class="page-subtitle">
+            Every publicly accessible playlist mapped from the YouTube channel with exact titles, verified video counts, and original links.
+          </p>
+        </div>
+
+        <div class="playlists-grid" id="playlists-grid">
+          <!-- Dynamically populated via JS -->
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==================== TAB 4: BOARD EXAM PREPARATION ==================== -->
+    <section id="tab-examprep" class="tab-pane">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag">Centum &amp; Score Builder Roadmap</span>
+          <h1 class="page-title">Board Exam Preparation (2026&ndash;2027)</h1>
+          <p class="page-subtitle">Proven daily challenges, repeated 2, 3 &amp; 5 mark question breakdowns, and quarterly/half-yearly masterplans.</p>
+        </div>
+
+        <div class="exam-plans-grid">
+          
+          <!-- 75-Day Centum Plan Card -->
+          <div class="plan-hero-card">
+            <div class="plan-tag gold">Full Syllabus Roadmap</div>
+            <h2 class="plan-title">75-Days Physics Centum Challenge 🥳❤</h2>
+            <p class="plan-desc">
+              The flagship Tamil Nadu State Board preparation series designed to help students score maximum marks. Breaks the entire 11 chapters into daily bite-sized tasks, line-by-line textbook analysis, and repeated exam questions.
+            </p>
+            <div class="plan-highlights">
+              <div class="p-item"><span>59 Videos</span> &bull; Full Daily Breakdown</div>
+              <div class="p-item"><span>2, 3 &amp; 5 Marks</span> &bull; Marking Scheme Focused</div>
+              <div class="p-item"><span>Book-Back &amp; Interior</span> &bull; All Important Problems</div>
+            </div>
+            <button class="btn-primary" data-action="filter-track" data-search="75Days">Explore All 59 Centum Videos &rarr;</button>
+          </div>
+
+          <!-- 50-Day Challenge Card -->
+          <div class="plan-hero-card">
+            <div class="plan-tag blue">Crash Revision</div>
+            <h2 class="plan-title">50-Days Physics Challenge 🔥</h2>
+            <p class="plan-desc">
+              Structured preparation schedule for students restarting their board preparation or needing rapid chapter-by-chapter consolidation before revision exams.
+            </p>
+            <div class="plan-highlights">
+              <div class="p-item"><span>37 Videos</span> &bull; Daily Target Routine</div>
+              <div class="p-item"><span>High-Frequency Numericals</span> &bull; Step-by-Step Derivations</div>
+              <div class="p-item"><span>Formula Retention</span> &bull; Mistake Notebook Method</div>
+            </div>
+            <button class="btn-primary" data-action="filter-track" data-search="50 Days">Explore 50-Day Challenge &rarr;</button>
+          </div>
+
+        </div>
+
+        <!-- Quarterly & Half-Yearly Important Questions -->
+        <div class="exam-prep-section-title">
+          <h3>Quarterly &amp; Half-Yearly Repeated Questions (Verified Uploads)</h3>
+        </div>
+        <div class="exam-questions-grid" id="exam-prep-videos-grid">
+          <!-- Populated from JS -->
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==================== TAB 5: NEET & JEE ==================== -->
+    <section id="tab-neetjee" class="tab-pane">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag">Competitive Entrance Hub</span>
+          <h1 class="page-title">NEET &amp; JEE Physics Practice Center</h1>
+          <p class="page-subtitle">
+            Over 450 chapterwise Previous Year Questions (PYQs) solved in Tamil, foundation concept lessons, and numerical short-tricks.
+          </p>
+        </div>
+
+        <div class="neet-stats-card">
+          <div class="neet-stat">
+            <span class="n-val">454</span>
+            <span class="n-lbl">Solved Chapterwise PYQs</span>
+          </div>
+          <div class="neet-stat">
+            <span class="n-val">Class 11 &amp; 12</span>
+            <span class="n-lbl">Complete Syllabus Covered</span>
+          </div>
+          <div class="neet-stat">
+            <span class="n-val">Tamil &amp; English</span>
+            <span class="n-lbl">Bilingual Problem Walkthrough</span>
+          </div>
+        </div>
+
+        <!-- NEET PYQ Catalog -->
+        <div class="neet-catalog-header">
+          <h3>Browse Verified NEET / JEE PYQ Lessons</h3>
+          <p>Click any lesson to watch the step-by-step mathematical derivation and problem-solving method.</p>
+        </div>
+
+        <div class="neet-videos-grid" id="neet-videos-grid">
+          <!-- Populated via JS -->
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==================== TAB 6: CAREER GUIDANCE ==================== -->
+    <section id="tab-career" class="tab-pane">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag">Higher Education &amp; Admissions</span>
+          <h1 class="page-title">Career Guidance &amp; TNEA Counselling</h1>
+          <p class="page-subtitle">
+            Engineering admissions insights, choice-filling strategy, college ranking tips, and cutoff evaluation.
+          </p>
+        </div>
+
+        <!-- Critical Outdated Information Caution Banner -->
+        <div class="alert-box warning-alert" role="alert">
+          <div class="alert-icon">⚠️</div>
+          <div class="alert-body">
+            <h4 class="alert-title">Time-Sensitive Admissions Notice &mdash; Check Current Official Schedules</h4>
+            <p class="alert-text">
+              Cutoffs, rank lists, counselling rounds, and choice filling schedules change every academic cycle. 
+              The videos below provide timeless procedural wisdom and strategic choice-filling techniques from Muruga MP, but students MUST always cross-verify dates, fees, and seat matrices with the official portal:
+              <a href="https://www.tneaonline.org/" target="_blank" rel="noopener noreferrer" class="alert-link">tneaonline.org (Directorate of Technical Education, TN)</a>.
+            </p>
+          </div>
+        </div>
+
+        <div class="career-videos-grid" id="career-videos-grid">
+          <!-- Populated via JS with publish year tags -->
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==================== TAB 7: MINDSET & MOTIVATION ==================== -->
+    <section id="tab-motivation" class="tab-pane">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag">Mindset, Habits &amp; Growth</span>
+          <h1 class="page-title">Study Strategies &amp; Motivation</h1>
+          <p class="page-subtitle">
+            Clear mental roadmaps, exam stress management, and realistic study habits kept separate from your subject learning library.
+          </p>
+        </div>
+
+        <div class="motivation-feature-card">
+          <div class="m-card-badge">Key Teaching Message</div>
+          <h2 class="m-card-title">&ldquo;Watching Solutions &ne; Practising Physics&rdquo;</h2>
+          <p class="m-card-text">
+            In his October 2026 guidance, Muruga MP shared a crucial lesson for Class 12 students: watching someone else solve a derivation creates familiarity, but picking up a pen and solving 5 questions yourself creates true exam ability.
+          </p>
+          <div class="m-card-quote">
+            &ldquo;February-la confidence venumna… October-la consistency venum.&rdquo;
+            <span class="quote-sub">(If you want confidence in February, you need consistency in October.)</span>
+          </div>
+        </div>
+
+        <div class="motivation-grid" id="motivation-grid">
+          <!-- Populated via JS -->
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==================== TAB 8: BATCHES & ADMISSIONS ==================== -->
+    <section id="tab-batches" class="tab-pane">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag">Official Academy Tuition Batches</span>
+          <h1 class="page-title">Muruga MP Academy &mdash; Batch 5 Admissions</h1>
+          <p class="page-subtitle">
+            Verified course details, schedule, curriculum, and enrollment contact directly from recent official academy broadcasts.
+          </p>
+        </div>
+
+        <div class="batches-comparison-grid">
+          
+          <!-- Batch Card 1: CBSE Class 12 -->
+          <div class="batch-card featured">
+            <div class="batch-badge">CBSE Board Exam 2027</div>
+            <h2 class="batch-name">CBSE Class 12 Physics (Batch 5)</h2>
+            <div class="batch-price-row">
+              <span class="price-current">₹8,999</span>
+              <span class="price-orig">₹12,999</span>
+              <span class="price-sub">Early Bird (First 10 Seats)</span>
+            </div>
+            
+            <ul class="batch-features-list">
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Complete Class 12 CBSE Physics Syllabus</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> CBSE Board Marking Scheme Answer-Writing Techniques</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> 100+ Carefully Selected PYQs with Detailed Solutions</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> 20–25 Additional High-Yield Board Topics</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Chapter-wise PPT Notes &amp; Formula Sheets</li>
+            </ul>
+
+            <div class="batch-schedule-box">
+              <div class="schedule-row"><strong>Schedule:</strong> Tuesday, Thursday, Saturday</div>
+              <div class="schedule-row"><strong>Time:</strong> 7:00 PM &ndash; 8:00 PM IST</div>
+              <div class="schedule-row"><strong>Duration:</strong> 3 Months (Starts Oct 24, 2026)</div>
+            </div>
+
+            <a href="https://wa.me/919043568854?text=CBSE" target="_blank" rel="noopener noreferrer" class="btn-whatsapp full-width">
+              Send &ldquo;CBSE&rdquo; on WhatsApp (9043568854)
+            </a>
+          </div>
+
+          <!-- Batch Card 2: TN State Board Class 12 -->
+          <div class="batch-card">
+            <div class="batch-badge state">Tamil Nadu State Board 2027</div>
+            <h2 class="batch-name">12th State Board Physics (Batch 5)</h2>
+            <div class="batch-price-row">
+              <span class="price-current">₹8,999</span>
+              <span class="price-orig">₹12,999</span>
+              <span class="price-sub">Early Bird (First 10 Seats)</span>
+            </div>
+            
+            <ul class="batch-features-list">
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Complete Samacheer Kalvi Physics Syllabus</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Centum Target: 2, 3 &amp; 5 Mark Compulsory Numericals</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Public Exam Marking Key Guidelines</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Book-Back &amp; Interior Derivation Focus</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Regular Self-Test Series &amp; Mistake Analysis</li>
+            </ul>
+
+            <div class="batch-schedule-box">
+              <div class="schedule-row"><strong>Schedule:</strong> Tuesday, Thursday, Saturday</div>
+              <div class="schedule-row"><strong>Time:</strong> 5:00 PM &ndash; 6:00 PM IST</div>
+              <div class="schedule-row"><strong>Duration:</strong> 3 Months (Starts Oct 24, 2026)</div>
+            </div>
+
+            <a href="https://wa.me/919043568854?text=STATE%20BOARD" target="_blank" rel="noopener noreferrer" class="btn-whatsapp full-width">
+              Send &ldquo;STATE BOARD&rdquo; on WhatsApp (9043568854)
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==================== TAB 9: ABOUT & OFFICIAL SOURCES ==================== -->
+    <section id="tab-about" class="tab-pane">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag">Educator Profile &amp; Verification</span>
+          <h1 class="page-title">About Muruga MP &amp; Source Verification</h1>
+          <p class="page-subtitle">Detailed background, official community channels, and research audit methodology.</p>
+        </div>
+
+        <div class="about-grid">
+          
+          <div class="about-bio-card">
+            <div class="about-author-header">
+              <img src="assets/muruga_avatar.jpg" alt="Muruga MP" class="about-author-avatar">
+              <div>
+                <h2 class="about-title">Muruganandam M (Muruga MP)</h2>
+                <p class="about-role">Physics Educator &bull; Student Mentor &bull; Content Creator</p>
+              </div>
+            </div>
+            
+            <p class="about-text">
+              Muruga MP is a passionate physics educator with over 9 years of teaching experience. Through his YouTube channel <strong>Open Your Mind With Muruga MP</strong>, he has simplified complex physics concepts, derivations, and numericals for hundreds of thousands of students across Tamil Nadu and CBSE schools.
+            </p>
+            <p class="about-text">
+              His teaching philosophy blends concept clarity, disciplined daily practice, and a warm, encouraging mentorship motto: <em>&ldquo;Help Others With a Smile&rdquo;</em>.
+            </p>
+
+            <div class="about-links-group">
+              <h3>Verified Official Links:</h3>
+              <ul class="verified-links-list">
+                <li>
+                  <a href="https://www.youtube.com/channel/UCVJc7bS5lP8OrZGd7vs_yHw" target="_blank" rel="noopener noreferrer">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                    YouTube: Open Your Mind With Muruga MP (@MurugaMP)
+                  </a>
+                </li>
+                <li>
+                  <a href="https://t.me/s/OpenYourMindWithMurugaMP" target="_blank" rel="noopener noreferrer">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295-.002 0-.003 0-.005 0l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.197 1.006.128.828.942z"/></svg>
+                    Telegram: @OpenYourMindWithMurugaMP (16.7K Members)
+                  </a>
+                </li>
+                <li>
+                  <a href="https://play.google.com/store/apps/details?id=com.carveit.a2ztechvalley" target="_blank" rel="noopener noreferrer">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814l10.36 10.36-10.36 10.36c-.347-.327-.559-.798-.559-1.341v-17.994c0-.594.246-1.102.639-1.385zm12.396 12.396l2.122-2.122-13.883-7.973 11.761 10.095zm2.122-2.122l2.361 1.356c.884.508.884 1.336 0 1.844l-2.361 1.356-2.361-2.361 2.361-2.195zm-2.122-2.122l-11.761 10.095 13.883-7.973-2.122-2.122z"/></svg>
+                    Google Play App: Open Your Mind With Muruga MP
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.openyourmindwithmurugamp.com/" target="_blank" rel="noopener noreferrer">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                    Official Website: openyourmindwithmurugamp.com
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="audit-summary-card">
+            <h3>Website Standards &amp; Technical Highlights</h3>
+            <p>
+              This website is engineered with a <strong>student-first architecture</strong> designed for maximum speed, accessibility, and conceptual clarity:
+            </p>
+            <ul class="audit-points">
+              <li><strong>Zero Client Redirect Handshake:</strong> Instant page loads without script token loops or lag.</li>
+              <li><strong>Unified Taxonomy:</strong> 31 scattered playlists consolidated into intuitive subjects, chapters, and formats.</li>
+              <li><strong>Curated Timelines:</strong> Higher-education admissions and exam challenges cleanly organized.</li>
+              <li><strong>Full Source Verification:</strong> All 529 video lessons and 31 playlists are directly linked from Muruga MP's official channels.</li>
+            </ul>
+
+            <div class="demo-disclaimer-box">
+              <strong>Official Portal:</strong> Built for Muruga MP Academy to deliver seamless, uninterrupted physics learning for high school and competitive entrance aspirants across Tamil Nadu and CBSE schools.
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ==================== LESSON DETAIL MODAL ==================== -->
+  <div class="modal-backdrop" id="lesson-modal-backdrop"></div>
+  <div role="dialog" aria-modal="true" class="lesson-modal" id="lesson-modal" aria-labelledby="modal-lesson-title">
+    <div class="modal-header">
+      <div class="modal-breadcrumbs" id="modal-breadcrumbs">
+        <span>Study Library</span> &rarr; <span id="modal-crumb-class">Class 12</span> &rarr; <span id="modal-crumb-chapter">Electrostatics</span>
+      </div>
+      <button type="button" class="modal-close-btn" id="modal-close-btn" aria-label="Close modal">&times;</button>
+    </div>
+
+    <div class="modal-body">
+      
+      <!-- Video Player Frame -->
+      <div class="video-player-container">
+        <iframe id="modal-video-iframe" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+
+      <!-- Video Details & Actions -->
+      <div class="modal-video-meta">
+        <div class="modal-badges-row">
+          <span class="m-badge class-badge" id="modal-class-badge">Class 12</span>
+          <span class="m-badge syllabus-badge" id="modal-syllabus-badge">CBSE / NCERT</span>
+          <span class="m-badge format-badge" id="modal-format-badge">Concept Lesson</span>
+          <span class="m-badge language-badge" id="modal-lang-badge">Tamil</span>
+        </div>
+
+        <h2 class="modal-title" id="modal-lesson-title">Lesson Title Goes Here</h2>
+
+        <div class="modal-playlist-ref">
+          <span class="ref-label">From Verified Playlist:</span>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="ref-link" id="modal-playlist-link">Playlist Title</a>
+        </div>
+
+        <div class="modal-actions-bar">
+          <a href="#" target="_blank" rel="noopener noreferrer" class="btn-primary small" id="modal-external-yt-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+            Watch on YouTube
+          </a>
+          <button type="button" class="btn-outline small" id="modal-bookmark-toggle-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg>
+            <span id="modal-bookmark-btn-text">Save to Bookmarks</span>
+          </button>
+          <button type="button" class="btn-outline small" id="modal-share-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
+            Share Link
+          </button>
+        </div>
+
+        <!-- Related Lessons from the Same Playlist / Chapter -->
+        <div class="modal-related-section">
+          <h3>Related Lessons in This Unit</h3>
+          <div class="related-lessons-list" id="modal-related-list"></div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- ==================== BOOKMARKS DRAWER ==================== -->
+  <div class="bookmarks-drawer-overlay" id="bookmarks-overlay"></div>
+  <aside class="bookmarks-drawer" id="bookmarks-drawer" aria-label="Saved Bookmarks Drawer">
+    <div class="b-drawer-header">
+      <div class="b-drawer-title">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg>
+        <h3>Saved Lessons (<span id="b-drawer-count">0</span>)</h3>
+      </div>
+      <button type="button" class="b-drawer-close" id="close-bookmarks-btn">&times;</button>
+    </div>
+    
+    <div class="b-drawer-body" id="bookmarks-list-container">
+      <!-- Populated via JS -->
+      <div class="b-empty-state" id="bookmarks-empty">
+        <p>No saved lessons yet. Click the bookmark icon on any lesson card to save it for quick revision!</p>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-col brand-col">
+        <div class="footer-brand">
+          <img src="assets/muruga_logo_512.png" alt="Muruga MP Academy" class="footer-avatar">
+          <span class="logo-title">MURUGA MP ACADEMY</span>
+        </div>
+        <p class="footer-motto">&ldquo;Help Others With a Smile&rdquo;</p>
+        <p class="footer-text">
+          Dedicated educational concept platform celebrating the physics mentorship of Muruga MP. 529+ verified lessons, chapterwise PYQs, and student-first learning tools.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#library" data-action="view-tab" data-target="library">Study Library</a></li>
+          <li><a href="#playlists" data-action="view-tab" data-target="playlists">Playlists Directory</a></li>
+          <li><a href="#examprep" data-action="view-tab" data-target="examprep">Board Centum Plan</a></li>
+          <li><a href="#neetjee" data-action="view-tab" data-target="neetjee">NEET &amp; JEE PYQs</a></li>
+          <li><a href="#career" data-action="view-tab" data-target="career">Career &amp; TNEA</a></li>
+          <li><a href="#batches" data-action="view-tab" data-target="batches">Batch 5 Admissions</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Verified Channels</h4>
+        <ul>
+          <li><a href="https://www.youtube.com/channel/UCVJc7bS5lP8OrZGd7vs_yHw" target="_blank" rel="noopener noreferrer">YouTube Channel (@MurugaMP)</a></li>
+          <li><a href="https://t.me/s/OpenYourMindWithMurugaMP" target="_blank" rel="noopener noreferrer">Telegram Channel (16.7K)</a></li>
+          <li><a href="https://play.google.com/store/apps/details?id=com.carveit.a2ztechvalley" target="_blank" rel="noopener noreferrer">Android Mobile App</a></li>
+          <li><a href="https://wa.me/919043568854" target="_blank" rel="noopener noreferrer">WhatsApp Academy Line</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col disclaimer-col">
+        <h4>Student-First Platform</h4>
+        <p class="disclaimer-text">
+          Dedicated educational portal empowering students with free conceptual physics mastery, board examination challenges, and engineering admissions guidance.
+        </p>
+        <p class="copyright">&copy; 2026 Muruga MP Academy. All rights reserved. &bull; &ldquo;Help Others With a Smile&rdquo;</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIPT INCLUSION: DATA PRE-LOADED VIA DATA.JS THEN APP.JS -->
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
