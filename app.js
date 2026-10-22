@@ -33,7 +33,7 @@
   // DOM Cache
   const DOM = {
     // Navigation
-    navLinks: document.querySelectorAll('.nav-link, .drawer-link'),
+    navLinks: document.querySelectorAll('.nav-link, .drawer-link, .bottom-nav-item'),
     tabPanes: document.querySelectorAll('.tab-pane'),
     mobileToggleBtn: document.getElementById('mobile-toggle-btn'),
     mobileDrawer: document.getElementById('mobile-drawer'),
@@ -1377,9 +1377,11 @@
     const SHOCK_THEMES = ['cyan', 'amber', 'purple'];
     const SPARK_COLORS = ['#38bdf8', '#fbbf24', '#f59e0b', '#c084fc', '#34d399', '#f43f5e'];
 
-    document.addEventListener('pointerdown', (e) => {
-      const x = e.clientX;
-      const y = e.clientY;
+    document.addEventListener('click', (e) => {
+      // Don't spawn shockwaves on input typing or when coordinates are invalid
+      if (e.target.tagName === 'INPUT' || e.target.tagName === 'SELECT' || e.target.tagName === 'TEXTAREA') return;
+      const x = typeof e.clientX === 'number' && e.clientX > 0 ? e.clientX : window.innerWidth / 2;
+      const y = typeof e.clientY === 'number' && e.clientY > 0 ? e.clientY : window.innerHeight / 2;
 
       // 1. Expanding Quantum Shockwave Ring
       const theme = SHOCK_THEMES[Math.floor(Math.random() * SHOCK_THEMES.length)];
