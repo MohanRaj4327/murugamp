@@ -873,6 +873,16 @@
      EVENT LISTENERS & BINDINGS
      ========================================================================== */
   function bindEvents() {
+    // Navigation click handling for desktop nav, drawer, and mobile bottom bar
+    DOM.navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        const tabId = link.getAttribute('data-tab');
+        if (tabId) {
+          switchTab(tabId);
+        }
+      });
+    });
+
     // Mobile Drawer
     DOM.mobileToggleBtn.addEventListener('click', () => {
       DOM.mobileDrawer.classList.add('open');

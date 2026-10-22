@@ -194,6 +194,7 @@ ul, ol {
 .brand-logo {
   display: flex;
   align-items: center;
+  gap: 0.75rem;
   flex-shrink: 0;
   text-decoration: none;
 }
@@ -3174,16 +3175,18 @@ a:active,
   bottom: 0;
   left: 0;
   right: 0;
-  height: 60px;
-  background: rgba(7, 11, 20, 0.95);
+  height: calc(58px + env(safe-area-inset-bottom, 0px));
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+  background: rgba(7, 11, 20, 0.96);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
   display: none;
   align-items: center;
   justify-content: space-around;
   z-index: 1000;
-  padding: 0 0.25rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
   box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.55);
 }
 
@@ -3259,20 +3262,33 @@ a:active,
     display: flex;
   }
   body {
-    padding-bottom: 64px !important;
+    padding-bottom: calc(72px + env(safe-area-inset-bottom, 0px)) !important;
   }
 
   /* Header adjustments */
   .site-header {
-    height: 4rem;
+    height: 3.85rem;
   }
   .header-inner {
-    height: 4rem;
+    height: 3.85rem;
     gap: 0.5rem;
   }
+  .brand-logo {
+    gap: 0.55rem;
+  }
   .brand-channel-logo {
-    height: 44px;
-    width: 44px;
+    height: 38px;
+    width: 38px;
+  }
+  .logo-title {
+    font-size: 0.92rem;
+  }
+  .academy-tag {
+    font-size: 0.58rem;
+    padding: 0.05rem 0.35rem;
+  }
+  .logo-subtitle {
+    font-size: 0.65rem;
   }
   .search-trigger-btn {
     width: 2.35rem;
@@ -3354,27 +3370,77 @@ a:active,
     margin-bottom: 0.85rem;
   }
 
-  /* Educator Portrait Card */
+  /* Educator Portrait Card - Sleek Mobile Showcase */
   .educator-portrait-card {
-    max-width: 340px;
-    margin: 0 auto;
+    max-width: 360px;
+    margin: 1.25rem auto 0;
+    padding: 8px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
   }
   .atom-orbit-ring {
     display: none !important;
   }
-  .floating-badge {
-    position: static !important;
-    transform: none !important;
-    width: 100% !important;
-    box-sizing: border-box !important;
-    margin-top: 8px;
-    padding: 0.55rem 0.85rem !important;
+  .portrait-ambient-glow {
+    display: none !important;
   }
-  .badge-top-right, .badge-bottom-left {
-    top: auto !important;
-    bottom: auto !important;
+  .portrait-image-wrapper {
+    aspect-ratio: 16 / 11 !important;
+    max-height: 230px !important;
+    border-radius: 14px !important;
+  }
+  .portrait-main-img {
+    object-position: center 15% !important;
+  }
+  .floating-badge {
+    position: absolute !important;
+    padding: 0.35rem 0.6rem !important;
+    border-radius: 8px !important;
+    gap: 0.45rem !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    max-width: 48% !important;
+  }
+  .badge-top-right {
+    top: 12px !important;
+    right: 12px !important;
     left: auto !important;
+    bottom: auto !important;
+  }
+  .badge-bottom-left {
+    bottom: 12px !important;
+    left: 12px !important;
     right: auto !important;
+    top: auto !important;
+  }
+  .floating-badge .badge-icon {
+    width: 1.55rem !important;
+    height: 1.55rem !important;
+    font-size: 0.82rem !important;
+    border-radius: 6px !important;
+  }
+  .floating-badge .badge-bold {
+    font-size: 0.72rem !important;
+    line-height: 1.15 !important;
+  }
+  .floating-badge .badge-tiny {
+    font-size: 0.62rem !important;
+  }
+  .portrait-verified-footer {
+    padding: 0.6rem 0.75rem !important;
+    border-radius: 12px !important;
+    margin-top: 8px !important;
+  }
+  .verified-avatar-ring {
+    width: 2.1rem !important;
+    height: 2.1rem !important;
+  }
+  .v-name {
+    font-size: 0.85rem !important;
+  }
+  .v-sub {
+    font-size: 0.68rem !important;
   }
 
   /* Library & Filter Panel */
@@ -3586,18 +3652,26 @@ a:active,
 
   /* Hero Actions Group */
   .hero-actions-group {
-    flex-direction: column;
-    align-items: stretch;
+    display: flex;
+    flex-wrap: wrap;
     gap: 0.65rem;
     margin-bottom: 1.5rem;
     width: 100%;
   }
-  .btn-hero-primary, .btn-hero-whatsapp, .btn-hero-telegram {
+  .btn-hero-primary {
     width: 100%;
     justify-content: center;
-    font-size: 0.92rem;
-    padding: 0.78rem 1rem;
-    border-radius: 10px;
+    font-size: 0.95rem;
+    padding: 0.82rem 1rem;
+    border-radius: 12px;
+  }
+  .btn-hero-whatsapp, .btn-hero-telegram {
+    flex: 1 1 45%;
+    justify-content: center;
+    font-size: 0.82rem;
+    padding: 0.72rem 0.5rem;
+    border-radius: 12px;
+    text-align: center;
   }
 
   /* Hero Live Search */
